@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rounded-border-bottom {
+  border-radius: 10px;
+  height: 5px;
+  box-shadow: 0 35px 0 0 #000;
+  cursor: pointer;
+}

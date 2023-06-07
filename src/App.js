@@ -2,17 +2,16 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 
 function App() {
+  const borderbottomClass =
+    "relative after:absolute after:content-[''] after:h-[4px] after:bottom-[-10px] after:bg-lightblue after:w-[100%] after:left-0 after-right-0 after:rounded-lg";
   return (
     <div className="bg-[#252525] font-poppins">
-      <div className="max-w-screen-xl my-0 mx-auto px-6">
-        {/* About Section */}
-        <div className="h-[600px]">
-          {/* nav bar */}
-          <Navbar />
+      {/* nav bar */}
+      <Navbar borderbottom={borderbottomClass} />
 
-          {/* hero section */}
-          <Hero />
-        </div>
+      <div className="max-w-screen-xl my-0 mx-auto pl-14 pt-20">
+        {/* hero section */}
+        <Hero />
 
         {/* Skills Section */}
         <div id="skills" className="bg-slate-100 h-[600px]">
