@@ -41,7 +41,7 @@ function Navbar({ borderbottom }) {
             Skills
           </Link>
           <Link
-            to="experience"
+            to="projects"
             spy={true}
             smooth={true}
             offset={-100}
@@ -49,18 +49,18 @@ function Navbar({ borderbottom }) {
             className="cursor-pointer"
             activeClass={borderbottom}
           >
-            Experience
+            Projects
           </Link>
           <Link
-            to="contact"
+            to="about"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-180}
             duration={500}
             className="cursor-pointer"
             activeClass={borderbottom}
           >
-            Contact
+            About
           </Link>
         </ul>
       </div>
