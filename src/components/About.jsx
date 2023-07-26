@@ -7,10 +7,13 @@ import arrowdown from "../Images/arrowonedown.svg";
 
 function About({ borderbottom }) {
   return (
-    <div id="about" className="mt-32 flex justify-center items-center gap-20">
+    <div
+      id="about"
+      className="mt-32 flex justify-center items-center gap-20 lg3:flex-col"
+    >
       <div>
         <h1
-          className={`text-lightwhite text-[46px] ${borderbottom} after:w-[176px]`}
+          className={`text-lightwhite text-[46px] ${borderbottom} after:w-[176px] lg6:text-[40px]`}
         >
           About Me
         </h1>
@@ -39,7 +42,7 @@ function About({ borderbottom }) {
         </div>
       </div>
 
-      <img src={guy} alt="about" className="mt-[-20px]" />
+      <img src={guy} alt="about" className="mt-[-20px] lg3:hidden" />
     </div>
   );
 }

@@ -7,7 +7,7 @@ import arrowRight from "../Images/arrowRight.svg";
 
 function Footer() {
   return (
-    <div className="bg-[#505050] h-[590px] mt-36 flex justify-around pt-14">
+    <div className="bg-[#505050] h-[590px] mt-36 flex justify-around pt-14 lg6:pt-28 lg6:pb-28 lg6:gap-20 lg6:flex-col lg6:h-[1300px] lg6:items-center lg6:text-center">
       <div>
         <h2 className="text-[26px] text-[#f1f1f1]">Navigate To</h2>
         <div className="flex flex-col mt-8 gap-6">
@@ -61,7 +61,7 @@ function Footer() {
         <div>
           <h2 className="text-[26px] text-[#f1f1f1]">Social Media</h2>
 
-          <div className="flex gap-5 mt-8">
+          <div className="flex gap-5 mt-8 lg6:justify-center">
             <img src={linkedin} alt="linkedin" className="cursor-pointer" />
             <img src={facebook} alt="facebook" className="cursor-pointer" />
             <img src={github} alt="github" className="cursor-pointer" />
@@ -89,7 +89,7 @@ function Footer() {
 
         <div className="mt-8 flex flex-col gap-8">
           <div>
-            <label htmlFor="email" className="text-xl text-[#f1f1f1]">
+            <label htmlFor="email" className="text-xl text-[#f1f1f1] text-left">
               Email
             </label>{" "}
             <br />

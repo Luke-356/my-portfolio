@@ -24,7 +24,7 @@ function App() {
       {/* nav bar */}
       <Navbar borderbottom={borderbottomClass} />
 
-      <div className="max-w-screen-xl my-0 mx-auto px-8 pt-20">
+      <div className="max-w-[1279px] my-0 mx-auto px-8 pt-20">
         {/* hero section */}
         <Hero borderbottom={borderbottomClass} />
 

@@ -9,20 +9,20 @@ import { Link } from "react-scroll";
 function Hero({ borderbottom }) {
   return (
     <div id="hero" className="h-[600px]">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between lg6:flex-col">
         <div className="text-white mt-20">
           {/* Title */}
           <p
-            className={`text-[24px] font-normal text-[#CCCCCC] no-underline ${borderbottom} after:w-[114px]`}
+            className={`text-[24px] font-normal text-[#CCCCCC] no-underline ${borderbottom} lg6:after:left-[50%] lg6:after:translate-x-[-50%] lg6:after:bottom-[-10px] lg6:after:w-[150px] lg6:text-center after:w-[114px] lg6:text-center`}
           >
             Nyi Nyi Lwin
           </p>
-          <h1 className="text-[46px] text-[#F0F0F0] font-semibold max-w-[740px] mt-6">
+          <h1 className="text-[46px] lg:text-[40px] text-[#F0F0F0] font-semibold max-w-[740px] lg5:w-[500px] lg1:text-[38px] lg5:text-[34px] lg6:text-center mt-6">
             Bridging the Gap Between Ideas and Reality with Programming
           </h1>
 
           {/* job title */}
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex items-center gap-4 mt-4 lg6:justify-center">
             <div className="flex items-center gap-2">
               <img src={webIcon} alt="Web Logo" />
               <p className="text-[20px] text-dimwhite">Web Developer</p>
@@ -35,7 +35,7 @@ function Hero({ borderbottom }) {
           </div>
 
           {/* Call to Action buttons */}
-          <div className="flex gap-10 mt-6">
+          <div className="flex gap-10 mt-6 lg6:justify-center">
             <Link
               className="p-2 bg-lightblue flex items-center gap-4 text-white text-lg py-4 px-4 cursor-pointer rounded-md "
               to="projects"
@@ -55,10 +55,14 @@ function Hero({ borderbottom }) {
           </div>
         </div>
 
-        <img src={heroIcon} alt="hero-icon" className="mr-[-4rem]" />
+        <img
+          src={heroIcon}
+          alt="hero-icon"
+          className="mr-[-4rem] lg5:w-full lg6:w-[560px] lg6:mt-10 lg6:justify-center"
+        />
       </div>
 
-      <div className="mt-6">
+      <div className="mt-6 lg6:hidden">
         <img src={dot} alt="download" />
       </div>
     </div>
