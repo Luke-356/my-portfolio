@@ -32,7 +32,6 @@ This is the portfolio website that I created to experiment with my skills in Jav
    ```bash
    npm start
 
-5. **Open the Website::**
-   ```bash
+5. **Open the Website:**
    Open your browser and go to http://localhost:3000 to view the website.
 
