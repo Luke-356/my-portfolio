@@ -13,7 +13,7 @@ function Hero({ borderbottom }) {
         <div className="text-white mt-20">
           {/* Title */}
           <p
-            className={`text-[24px] font-normal text-[#CCCCCC] no-underline ${borderbottom} lg6:after:left-[50%] lg6:after:translate-x-[-50%] lg6:after:bottom-[-10px] lg6:after:w-[150px] lg6:text-center after:w-[114px] lg6:text-center`}
+            className={`text-[24px] font-normal text-[#CCCCCC] no-underline ${borderbottom} lg6:after:left-[50%] lg6:after:translate-x-[-50%] lg6:after:bottom-[-10px] lg6:after:w-[150px] lg6:text-center after:w-[114px]`}
           >
             Nyi Nyi Lwin
           </p>

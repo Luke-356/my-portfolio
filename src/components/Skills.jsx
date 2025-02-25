@@ -52,11 +52,11 @@ function Skills({ borderbottom }) {
           </div>
           <div>
             <div className="flex gap-5 [&>*]:bg-[#212121] [&>*]:rounded-lg [&>*]:py-3 [&>*]:px-5 text-center text-[20px] mt-5 text-[#D8D8D8]">
-              <div>PHP</div>
-              <div>MySQL</div>
+              <div>Python</div>
+              <div>SQL</div>
             </div>
             <div className="flex gap-5 [&>*]:bg-[#212121] [&>*]:rounded-lg [&>*]:py-3 [&>*]:px-5 text-center text-[20px] mt-5 text-[#D8D8D8]">
-              <div>SQL Server</div>
+              <div>C++</div>
               <div>NodeJs</div>
             </div>
           </div>

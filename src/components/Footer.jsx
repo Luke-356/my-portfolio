@@ -7,8 +7,8 @@ import arrowRight from "../Images/arrowRight.svg";
 
 function Footer() {
   return (
-    <div className="bg-[#505050] h-[590px] mt-36 flex justify-around pt-14 lg6:pt-28 lg6:pb-28 lg6:gap-20 lg6:flex-col lg6:h-[1300px] lg6:items-center lg6:text-center">
-      <div>
+    <div className="bg-[#505050] h-[590px] mt-36 flex justify-around pt-14 lg6:pt-28 lg6:pb-28 lg6:gap-20 lg6:flex-col lg6:h-[1300px] lg6:items-center">
+      <div className="lg6:text-center">
         <h2 className="text-[26px] text-[#f1f1f1]">Navigate To</h2>
         <div className="flex flex-col mt-8 gap-6">
           <Link
@@ -58,7 +58,7 @@ function Footer() {
         </div>
       </div>
       <div>
-        <div>
+        <div className="lg6:text-center">
           <h2 className="text-[26px] text-[#f1f1f1]">Social Media</h2>
 
           <div className="flex gap-5 mt-8 lg6:justify-center">
@@ -68,7 +68,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 lg6:text-center">
           <h2 className="text-[26px] text-[#f1f1f1]">Contact Details</h2>
 
           <div className="flex flex-col mt-8 gap-6">
@@ -78,14 +78,16 @@ function Footer() {
             >
               nyinyilwin356@gmail.com
             </a>
-            <a href="tel:+959267481856" className="text-xl text-[#f1f1f1]">
-              +959267481856
+            <a href="tel:+13475360536" className="text-xl text-[#f1f1f1]">
+              +13475360536
             </a>
           </div>
         </div>
       </div>
-      <div>
-        <h2 className="text-[26px] text-[#f1f1f1]">Contact Me</h2>
+      <div className="w-64">
+        <h2 className="text-[26px] text-[#f1f1f1] lg6:text-center">
+          Contact Me
+        </h2>
 
         <div className="mt-8 flex flex-col gap-8">
           <div>
@@ -97,7 +99,7 @@ function Footer() {
               type="email"
               name="textEmail"
               id="email"
-              className="mt-2 h-12 bg-[#7A7A7A] rounded-[9px] pl-2 border-transparent border-2 focus:outline-none focus:border-lightblue focus:border-2 focus:ring-1"
+              className="mt-2 h-12 w-full bg-[#7A7A7A] rounded-[9px] pl-2 border-transparent border-2 focus:outline-none focus:border-lightblue focus:border-2 focus:ring-1"
             />
           </div>
           <div>
@@ -110,7 +112,7 @@ function Footer() {
               id="message"
               cols="20"
               rows="7"
-              className="mt-2 bg-[#7A7A7A] rounded-[9px] pl-2 pt-2 border-transparent border-2 focus:outline-none focus:border-lightblue focus:border-2 focus:ring-1"
+              className="mt-2 w-full bg-[#7A7A7A] rounded-[9px] pl-2 pt-2 border-transparent border-2 focus:outline-none focus:border-lightblue focus:border-2 focus:ring-1"
             ></textarea>
             <div className="flex justify-end mt-8">
               <button

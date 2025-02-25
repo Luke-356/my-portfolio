@@ -18,7 +18,7 @@ function Projects({ borderbottom }) {
               <img
                 src={projectData.image}
                 alt="food"
-                className="rounded-l-2xl lg:rounded-t-2xl lg:rounded-none lg:w-full"
+                className="rounded-l-2xl lg:rounded-t-2xl lg:rounded-none lg:w-full max-w-fit	w-[547px] h-[364px]"
               />
 
               <div className="p-8">
@@ -26,10 +26,14 @@ function Projects({ borderbottom }) {
                 <p className="text-[20px] text-dimwhite mt-5 pb-6 border-[#626262] border-b-2">
                   {projectData.Ptag}
                 </p>
-                <div className="flex w-fit cursor-pointer mt-5">
-                  <p className="text-[20px] text-white">Github Link</p>
-                  <img src={link} alt="linkicon" className="ml-2" />
-                </div>
+
+                <a href={projectData.link} target="_blank" rel="noreferrer">
+                  <div className="flex w-fit cursor-pointer mt-5">
+                    <p className="text-[20px] text-white">Github Link</p>
+                    <img src={link} alt="linkicon" className="ml-2" />
+                  </div>
+                </a>
+                
 
                 <div className="flex gap-3 mt-[22px]">
                   {projectData.languages.map((language, index) => (

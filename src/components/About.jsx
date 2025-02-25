@@ -1,9 +1,5 @@
 import React from "react";
-import guy from "../Images/guy.svg";
-import linkedin from "../Images/linkedin.svg";
-import facebook from "../Images/facebook.svg";
-import github from "../Images/github.svg";
-import arrowdown from "../Images/arrowonedown.svg";
+import guy from "../Images/mystyle.jpg";
 
 function About({ borderbottom }) {
   return (
@@ -19,30 +15,18 @@ function About({ borderbottom }) {
         </h1>
 
         <p className="mt-10 w-[533px] text-[20px] text-dimwhite">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          ullamcorper ac viverra mollis tellus ultrices orci elit. Quis massa
-          posuere eros, non. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Aenean ullamcorper ac viverra mollis tellus ultrices.
+        I am a graduate student at Pace University, studying Computer Science. I enjoy solving problems and building software that works efficiently.
+        I am looking for a Software Engineering Internship for the summer of 2025. <br /><br />
+
+        My goal is to gain hands-on experience in software engineering. I am eager to work in a team, learn from professionals, and contribute to exciting projects.
+        Feel free to contact me for internship opportunities or collaborations. <br /><br />
+        
+        You can reach me at nyinyilwin356@gmail.com or nl55428n@pace.edu.
         </p>
 
-        <div className="flex justify-between mt-8">
-          <div className="flex gap-5">
-            <img src={linkedin} alt="linkedin" className="cursor-pointer" />
-            <img src={facebook} alt="facebook" className="cursor-pointer" />
-            <img src={github} alt="github" className="cursor-pointer" />
-          </div>
-
-          <div className="flex gap-4 items-center">
-            <hr className="border-dashed border-[2px] border-[#B8B8B8] w-[214px]" />
-            <div className="flex gap-2 cursor-pointer">
-              <p className="text-white text-[20px]">Read More</p>
-              <img src={arrowdown} alt="arrowdown" />
-            </div>
-          </div>
-        </div>
       </div>
 
-      <img src={guy} alt="about" className="mt-[-20px] lg3:hidden" />
+      <img src={guy} alt="about" className="mt-[-20px] lg3:hidden w-[40%]" />
     </div>
   );
 }
