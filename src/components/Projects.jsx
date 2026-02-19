@@ -14,16 +14,16 @@ function Projects({ borderbottom }) {
       {projectDatas.map((projectData) => {
         return (
           <div key={projectData.id}>
-            <div className="mt-14 rounded-2xl bg-dimblack flex lg:flex-col items-center lg:max-w-lg lg:mx-auto">
+            <div className="mt-14 rounded-2xl bg-dimblack flex lg:flex-col items-center lg:max-w-lg lg:mx-auto sm1:flex-col">
               <img
                 src={projectData.image}
                 alt="food"
-                className="rounded-l-2xl lg:rounded-t-2xl lg:rounded-none lg:w-full max-w-fit	w-[547px] h-[364px]"
+                className="rounded-l-2xl lg:rounded-t-2xl lg:rounded-none lg:w-full max-w-fit	w-[547px] h-[364px] sm1:rounded-t-2xl sm1:w-full sm1:h-auto"
               />
 
-              <div className="p-8">
-                <h2 className="text-[28px] text-white">{projectData.Title}</h2>
-                <p className="text-[20px] text-dimwhite mt-5 pb-6 border-[#626262] border-b-2">
+              <div className="p-8 sm1:p-4">
+                <h2 className="text-[28px] text-white sm1:text-xl">{projectData.Title}</h2>
+                <p className="text-[20px] text-dimwhite mt-5 pb-6 border-[#626262] border-b-2 sm1:text-base">
                   {projectData.Ptag}
                 </p>
 
@@ -35,11 +35,11 @@ function Projects({ borderbottom }) {
                 </a>
                 
 
-                <div className="flex gap-3 mt-[22px]">
+                <div className="flex gap-3 mt-[22px] flex-wrap">
                   {projectData.languages.map((language, index) => (
                     <p
                       key={index}
-                      className="bg-[#212121] py-3 px-6 rounded-[10px] text-[#D8D8D8] text-[18px]"
+                      className="bg-[#212121] py-3 px-6 rounded-[10px] text-[#D8D8D8] text-[18px] sm1:text-sm sm1:px-3 sm1:py-2"
                     >
                       {language}
                     </p>

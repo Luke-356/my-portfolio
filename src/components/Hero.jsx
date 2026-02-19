@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 function Hero({ borderbottom }) {
   return (
     <div id="hero" className="h-[600px]">
-      <div className="flex items-center justify-between lg6:flex-col">
+      <div className="flex items-center justify-between lg6:flex-col lg6:block">
         <div className="text-white mt-20">
           {/* Title */}
           <p
@@ -17,27 +17,27 @@ function Hero({ borderbottom }) {
           >
             Nyi Nyi Lwin
           </p>
-          <h1 className="text-[46px] lg:text-[40px] text-[#F0F0F0] font-semibold max-w-[740px] lg5:w-[500px] lg1:text-[38px] lg5:text-[34px] lg6:text-center mt-6">
+          <h1 className="text-[46px] lg:text-[40px] text-[#F0F0F0] font-semibold max-w-[740px] lg5:w-[500px] lg1:text-[38px] lg5:text-[34px] lg6:text-center lg6:w-auto lg6:mx-auto mt-6">
             Bridging the Gap Between Ideas and Reality with Programming
           </h1>
 
           {/* job title */}
-          <div className="flex items-center gap-4 mt-4 lg6:justify-center">
+          <div className="flex items-center gap-4 mt-4 lg6:justify-center sm1:flex-wrap sm1:gap-3">
             <div className="flex items-center gap-2">
               <img src={webIcon} alt="Web Logo" />
-              <p className="text-[20px] text-dimwhite">Web Developer</p>
+              <p className="text-[20px] text-dimwhite sm1:text-base">Web Developer</p>
             </div>
 
             <div className="flex items-center gap-2">
               <img src={paintIcon} alt="Web Logo" />
-              <p className="text-[20px] text-dimwhite">Software Engineer</p>
+              <p className="text-[20px] text-dimwhite sm1:text-base">Software Engineer</p>
             </div>
           </div>
 
           {/* Call to Action buttons */}
-          <div className="flex gap-10 mt-6 lg6:justify-center">
+          <div className="flex gap-10 mt-6 lg6:justify-center sm1:gap-4 sm1:flex-col">
             <Link
-              className="p-2 bg-lightblue flex items-center gap-4 text-white text-lg py-4 px-4 cursor-pointer rounded-md "
+              className="p-2 bg-lightblue flex items-center lg6:justify-between gap-4 text-white text-lg py-4 px-4 cursor-pointer rounded-md sm1:text-base sm1:px-3 sm1:py-3"
               to="projects"
               spy={true}
               smooth={true}
@@ -48,7 +48,7 @@ function Hero({ borderbottom }) {
               <img src={arrowDown} alt="arrow-down" />
             </Link>
 
-            <div className="p-2 bg-dimblack flex items-center gap-4 text-white text-lg py-4 px-4 cursor-pointer rounded-md ">
+            <div className="p-2 bg-dimblack flex items-center lg6:justify-between gap-4 text-white text-lg py-4 px-4 cursor-pointer rounded-md sm1:text-base sm1:px-3 sm1:py-3">
               <p>My Resume</p>
               <img src={download} alt="download" />
             </div>
@@ -58,7 +58,7 @@ function Hero({ borderbottom }) {
         <img
           src={heroIcon}
           alt="hero-icon"
-          className="mr-[-4rem] lg5:w-full lg6:w-[560px] lg6:mt-10 lg6:justify-center"
+          className="mr-[-4rem] lg5:w-full lg6:w-[560px] lg6:mt-10 lg6:mx-auto lg6:mb-10 sm1:w-full sm1:mt-10"
         />
       </div>
 
