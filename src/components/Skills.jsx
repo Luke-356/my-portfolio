@@ -5,7 +5,7 @@ import ToolsIcon from "../Images/ToolsIcon.svg";
 
 function Skills({ borderbottom }) {
   return (
-    <div id="skills" className="mt-3 lg6:mt-60">
+    <div id="skills" className="mt-3 lg6:mt-8">
       <h1
         className={`text-lightwhite text-3xl ${borderbottom} lg3:after:left-[50%] lg3:after:translate-x-[-50%] lg3:after:bottom-[-18px] lg3:after:w-[126px] lg3:text-center after:w-[100px]`}
       >
@@ -16,7 +16,7 @@ function Skills({ borderbottom }) {
         <div className="bg-dimblack p-4 rounded-xl sm1:p-3">
           <div className="flex items-center justify-between sm1:gap-2">
             <h2 className="text-[24px] text-white sm1:text-lg">Front-end</h2>
-            <img src={ToolsIcon} alt="Frontend Icon" className="sm1:w-6 sm1:h-6" />
+            <img src={ToolsIcon} alt="Frontend Icon" className="sm1:w-14 sm1:h-14" />
           </div>
           <div className="">
             <div className="flex gap-5 [&>*]:bg-[#212121] [&>*]:rounded-lg [&>*]:py-3 [&>*]:px-5 text-center text-[20px] mt-5 text-[#D8D8D8] sm1:gap-2 sm1:[&>*]:text-sm sm1:[&>*]:px-2 sm1:[&>*]:py-2">
@@ -32,7 +32,7 @@ function Skills({ borderbottom }) {
         <div className="bg-dimblack p-4 rounded-xl sm1:p-3">
           <div className="flex items-center justify-between sm1:gap-2">
             <h2 className="text-[24px] text-white sm1:text-lg">Front-end Tools</h2>
-            <img src={FrontIcon} alt="Frontend Icon" className="sm1:w-6 sm1:h-6" />
+            <img src={FrontIcon} alt="Frontend Icon" className="sm1:w-14 sm1:h-14" />
           </div>
           <div>
             <div className="flex gap-5 [&>*]:bg-[#212121] [&>*]:rounded-lg [&>*]:py-3 [&>*]:px-5 text-center text-[20px] mt-5 text-[#D8D8D8] sm1:gap-2 sm1:[&>*]:text-sm sm1:[&>*]:px-2 sm1:[&>*]:py-2">
@@ -48,7 +48,7 @@ function Skills({ borderbottom }) {
         <div className="bg-dimblack p-4 rounded-xl sm1:p-3">
           <div className="flex items-center justify-between sm1:gap-2">
             <h2 className="text-[24px] text-white sm1:text-lg">Back-end</h2>
-            <img src={BackIcon} alt="Frontend Icon" className="sm1:w-6 sm1:h-6" />
+            <img src={BackIcon} alt="Frontend Icon" className="sm1:w-14 sm1:h-14" />
           </div>
           <div>
             <div className="flex gap-5 [&>*]:bg-[#212121] [&>*]:rounded-lg [&>*]:py-3 [&>*]:px-5 text-center text-[20px] mt-5 text-[#D8D8D8] sm1:gap-2 sm1:[&>*]:text-sm sm1:[&>*]:px-2 sm1:[&>*]:py-2">

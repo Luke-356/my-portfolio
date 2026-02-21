@@ -9,16 +9,16 @@ function About({ borderbottom }) {
     >
       <div className="sm1:px-4">
         <h1
-          className={`text-lightwhite text-[46px] ${borderbottom} after:w-[176px] lg6:text-[40px] sm1:text-2xl`}
+          className={`text-lightwhite text-[46px] ${borderbottom} after:w-[176px] lg6:text-[40px] sm1:text-2xl sm1:after:w-[120px]`}
         >
           About Me
         </h1>
 
         <p className="mt-10 w-[533px] text-[20px] text-dimwhite sm1:w-full sm1:text-base sm1:mt-6">
-        I am a graduate student at Pace University, studying Computer Science. I enjoy solving problems and building software that works efficiently.
-        I am looking for a Software Engineering Internship for the summer of 2025. <br /><br />
+        I am a recently graduated Masters in Computer Science student at Pace University. I enjoy solving problems and building software that works efficiently.
+        I am currently preparing for my PhD in Computer Science admission and would love to collaborate with researchers and professionals. <br /><br />
 
-        My goal is to gain hands-on experience in software engineering. I am eager to work in a team, learn from professionals, and contribute to exciting projects.
+        My goal is to conduct research in Compuer Vision and also gain hands-on experience software engineering projects. I am eager to work in a research team, learn from professionals, and contribute to exciting projects.
         Feel free to contact me for internship opportunities or collaborations. <br /><br />
         
         You can reach me at nyinyilwin356@gmail.com or nl55428n@pace.edu.

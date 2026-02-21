@@ -6,9 +6,9 @@ function Projects({ borderbottom }) {
   return (
     <div id="projects" className="min-h-fit mt-14">
       <h1
-        className={`text-lightwhite text-3xl ${borderbottom} lg:after:left-[50%] lg:after:translate-x-[-50%] lg:after:bottom-[-18px] lg:after:w-[160px] lg:text-center after:w-[130px]`}
+        className={`text-lightwhite text-3xl ${borderbottom} lg:after:left-[50%] lg:after:translate-x-[-50%] lg:after:bottom-[-18px] lg:after:w-[200px] lg:text-center after:w-[130px]`}
       >
-        My Projects
+        Featured Projects
       </h1>
 
       {projectDatas.map((projectData) => {

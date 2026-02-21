@@ -8,9 +8,9 @@ import { Link } from "react-scroll";
 
 function Hero({ borderbottom }) {
   return (
-    <div id="hero" className="h-[600px]">
-      <div className="flex items-center justify-between lg6:flex-col lg6:block">
-        <div className="text-white mt-20">
+    <div id="hero" className="h-[600px] lg6:h-auto lg6:mt-20">
+      <div className="flex items-center justify-between lg6:flex-col">
+        <div className="text-white mt-20 lg6:mt-0">
           {/* Title */}
           <p
             className={`text-[24px] font-normal text-[#CCCCCC] no-underline ${borderbottom} lg6:after:left-[50%] lg6:after:translate-x-[-50%] lg6:after:bottom-[-10px] lg6:after:w-[150px] lg6:text-center after:w-[114px]`}
@@ -58,11 +58,11 @@ function Hero({ borderbottom }) {
         <img
           src={heroIcon}
           alt="hero-icon"
-          className="mr-[-4rem] lg5:w-full lg6:w-[560px] lg6:mt-10 lg6:mx-auto lg6:mb-10 sm1:w-full sm1:mt-10"
+          className="mr-[-4rem] lg5:w-full lg6:hidden sm1:w-full sm1:mt-10"
         />
       </div>
 
-      <div className="mt-6 lg6:hidden">
+      <div className="mt-6 lg6:flex lg6:justify-center lg6:mt-10">
         <img src={dot} alt="download" />
       </div>
     </div>
