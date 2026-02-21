@@ -14,13 +14,19 @@ function Footer() {
     e.preventDefault();
 
     try {
-      const res = await fetch("../api/sendEmail", {
+      const res = await fetch("/api/sendEmail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, message }),
       });
 
-      const data = await res.json();
+      let data = {};
+      try {
+        data = await res.json(); // parse response
+      } catch {
+        data = { message: "Server returned invalid response" };
+      }
+
       setSuccess(data.message);
       if (res.ok) {
         setEmail("");
