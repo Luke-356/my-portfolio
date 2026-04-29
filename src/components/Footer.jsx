@@ -1,45 +1,29 @@
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import linkedin from "../Images/linkedin.svg";
 import facebook from "../Images/facebook.svg";
 import github from "../Images/github.svg";
 import arrowRight from "../Images/arrowRight.svg";
-import React, { useState } from "react";
 
 function Footer() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [success, setSuccess] = useState("");
+  const [status, setStatus] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    try {
-      const res = await fetch("/api/sendEmail", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, message }),
-      });
-
-      let data = {};
-      try {
-        data = await res.json(); // parse response
-      } catch {
-        data = { message: "Server returned invalid response" };
-      }
-
-      setSuccess(data.message);
-      if (res.ok) {
-        setEmail("");
-        setMessage("");
-      }
-    } catch (err) {
-      setSuccess("Failed to send message. Try again later.");
-      console.error(err);
+    if (!email || !message) {
+      setStatus("Please enter both your email and message.");
+      return;
     }
+    const subject = encodeURIComponent(`Portfolio inquiry from ${email}`);
+    const body = encodeURIComponent(`Sender: ${email}%0D%0A%0D%0A${message}`);
+    setStatus("Opening your email client...");
+    window.location.href = `mailto:nyinyilwin356@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
-    <div className="bg-[#505050] mt-36 lg6:mt-20 flex justify-around py-14 lg6:gap-20 lg6:flex-col lg6:items-center sm1:flex-col sm1:px-4">
+    <div id="contact" className="bg-[#505050] mt-36 lg6:mt-20 flex justify-around py-14 lg6:gap-20 lg6:flex-col lg6:items-center sm1:flex-col sm1:px-4 sm1:py-8">
       
       {/* Navigation */}
       <div className="lg6:text-center sm1:text-center">
@@ -97,7 +81,7 @@ function Footer() {
           Contact Me
         </h2>
 
-        <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-8">
+          <form className="mt-8 flex flex-col gap-8" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="email" className="text-xl text-[#f1f1f1] text-left sm1:text-base sm1:block">
               Email
@@ -118,10 +102,10 @@ function Footer() {
             </label>
             <textarea
               id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
               cols="20"
               rows="7"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               className="mt-2 w-full bg-[#7A7A7A] rounded-[9px] pl-2 pt-2 border-transparent border-2 focus:outline-none focus:border-lightblue focus:border-2 focus:ring-1 sm1:text-sm"
               required
             ></textarea>
@@ -134,8 +118,7 @@ function Footer() {
                 Submit <img src={arrowRight} alt="arrowRight" className="sm1:w-4 sm1:h-4" />
               </button>
             </div>
-
-            {success && <p className="mt-2 text-white">{success}</p>}
+            {status && <p className="mt-4 text-sm text-[#f1f1f1] mb-0">{status}</p>}
           </div>
         </form>
       </div>
