@@ -16,14 +16,14 @@ function Hero({ borderbottom }) {
           </p>
 
           <h1 className="text-[46px] lg:text-[40px] text-[#F0F0F0] font-semibold max-w-[740px] lg5:w-[500px] lg1:text-[38px] lg5:text-[34px] lg6:text-center lg6:w-auto lg6:mx-auto mt-6">
-            DevOps & Systems Engineer
+            Software Engineer
           </h1>
 
           <p className="mt-6 text-[20px] text-[#BDBDBD] max-w-[680px] leading-relaxed lg6:text-center lg6:mx-auto sm1:text-base">
-            Master’s graduate in Computer Science focused on cloud infrastructure,
-            deployment automation, backend systems, and reliable application delivery.
-            Experienced with AWS EC2, Docker, Linux, FastAPI, SQL databases,
-            and practical troubleshooting across real-world deployments.
+          Master’s graduate in Computer Science focused on engineering robust,
+          maintainable software systems. Experienced in designing and building
+          full-stack applications, backend services, and user-facing interfaces
+          with Python, React, JavaScript, SQL, and modern software design patterns.
           </p>
 
           <div className="flex items-center gap-4 mt-8 lg6:justify-center sm1:flex-wrap">
@@ -47,10 +47,10 @@ function Hero({ borderbottom }) {
           </div>
 
           <div className="flex gap-8 mt-10 text-[#9E9E9E] text-[17px] lg6:justify-center sm1:flex-wrap">
-            <span>AWS EC2</span>
-            <span>Docker</span>
-            <span>Linux</span>
             <span>Python</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>FastAPI</span>
             <span>SQL</span>
           </div>
         </div>

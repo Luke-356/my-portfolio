@@ -2,9 +2,8 @@
 
 import React from "react";
 import link from "../Images/link.svg";
-import { projectDatas } from "../data/projectData";
 
-function Projects({ borderbottom }) {
+function Projects({ borderbottom, projectDatas }) {
   return (
     <div id="projects" className="min-h-fit mt-14">
       <h1
@@ -13,7 +12,7 @@ function Projects({ borderbottom }) {
         Projects
       </h1>
 
-      {projectDatas.map((projectData) => {
+      {(projectDatas || []).map((projectData) => {
         return (
           <div key={projectData.id}>
             <div className="mt-14 rounded-2xl bg-dimblack grid grid-cols-[45%_55%] lg:grid-cols-1 lg:max-w-lg lg:mx-auto overflow-hidden">

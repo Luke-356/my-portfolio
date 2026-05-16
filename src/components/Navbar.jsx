@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import Logo from "../Images/Logo.svg";
 import { useState, useRef, useEffect } from "react";
 
-function Navbar({ borderbottom }) {
+function Navbar({ borderbottom, openAdmin }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
